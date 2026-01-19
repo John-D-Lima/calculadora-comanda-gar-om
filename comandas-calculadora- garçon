@@ -1,0 +1,21 @@
+# calculadora-comanda-garçom
+#Este vai ser meu primeiro projeto em ADS, tem como objetivo: Sistema simples para cálculo de contas de restaurante.
+
+print ("--- CALCULADORA  DE COMANDA ---")
+
+#ENTRADA DE DADOS
+
+valor_consumo = float(input("Digite o valor total consumido: R$ "))
+
+#PROCESSAMENTO (CÁLCULOS)
+
+taxa_servico = valor_consumo * 0.10
+total_geral = valor_consumo + taxa_servico
+
+#SAÍDA DE DADOS FORMATADA
+
+print("-"*30)
+print(f"Subtotal: R$ {valor_consumo: .2f}")
+print(f"Total de Serviço (10%): R$ {taxa_servico}")
+print(f"Total a pagar: R$ {total_geral}")
+print("-"*30)
